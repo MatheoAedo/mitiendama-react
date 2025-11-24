@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# 🛍️ Mi Tienda MA
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Proyecto desarrollado por: Matheo Aedo**
+**Asignatura: Programación de Componentes**
 
-## Available Scripts
+Aplicación web de e-commerce desarrollada con React, Firebase y Bootstrap como proyecto final de la asignatura.
 
-In the project directory, you can run:
+##  Características Implementadas
 
-### `npm start`
+###  Ejercicio 1: Componentes y Comunicación
+- Lista de productos con componentes padre-hijo
+- Carrito de compras con estado dinámico
+- Comunicación entre componentes con props y callbacks
+- Actualización de estado con useState y this.setState
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+###  Ejercicio 2: Formularios y Firebase
+- Formularios con validaciones en tiempo real (react-simple-validator)
+- Integración completa con Firebase Firestore
+- Almacenamiento y recuperación de datos en cloud
+- Manejo de errores y estados de carga
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+###  Ejercicio 3: Styling y Mobile
+- Estilizado completo con Bootstrap y React-Bootstrap
+- Firebase Authentication (registro y login)
+- Firebase Storage (subida de archivos)
+- Exportación a APK con Cordova
+- APK firmado: `mitiendama-release.apk`
 
-### `npm test`
+##  Stack Tecnológico
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend:** React 18, React Router DOM, Bootstrap 5
+- **Backend:** Firebase (Auth, Firestore, Storage)
+- **Validación:** Simple React Validator
+- **Mobile:** Cordova para APK
+- **Deploy:** Netlify (web) + APK (mobile)
 
-### `npm run build`
+##  Instalación y Desarrollo
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+# Clonar repositorio
+git clone https://github.com/tuusuario/mitiendama-react.git
+cd mitiendama-react
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Instalar dependencias
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Ejecutar en desarrollo
+npm start
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Build para producción
+npm run build
