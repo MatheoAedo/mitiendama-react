@@ -3,7 +3,6 @@ import { getFirestore } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 import { getStorage } from 'firebase/storage';
 
-//  TUS CREDENCIALES REALES DE FIREBASE
 const firebaseConfig = {
   apiKey: "AIzaSyBIgw_DPiigB-zRLgCYzzzMyEVVO92Kpwo",
   authDomain: "tienda-maedo-progcom.firebaseapp.com",

@@ -17,7 +17,6 @@ function ProductList({ addToCart }) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
-  // Mueve sampleProducts a useMemo para estabilizar la referencia
   const sampleProducts = useMemo(() => [
     {
       id: 1,
@@ -82,7 +81,7 @@ function ProductList({ addToCart }) {
         }
       } catch (error) {
         console.error('Error fetching products:', error);
-        // Si hay error con Firebase, usamos datos de ejemplo
+        // Si hay error con Firebase, usamos datos de ejemplo para que no se vea incompleto
         setProducts(sampleProducts);
         setError('ℹ️ Conectando con Firebase...');
       } finally {
@@ -94,7 +93,7 @@ function ProductList({ addToCart }) {
     setTimeout(() => {
       fetchProducts();
     }, 1000);
-  }, [sampleProducts]); // ✅ Agregar sampleProducts como dependencia
+  }, [sampleProducts]);
 
   if (loading) {
     return (
