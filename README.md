@@ -33,12 +33,18 @@ Aplicación web de e-commerce desarrollada con React, Firebase y Bootstrap como 
 - **Validación:** Simple React Validator
 - **Mobile:** Cordova para APK
 - **Deploy:** Netlify (web) + APK (mobile)
+- **Control de Versiones:** Git + GitHub
 
 ##  Instalación y Desarrollo
 
+### Prerrequisitos
+- Node.js 16+ 
+- npm
+
+### Ejecutar Localmente
 ```bash
 # Clonar repositorio
-git clone https://github.com/tuusuario/mitiendama-react.git
+git clone https://github.com/MatheoAedo/mitiendama-react
 cd mitiendama-react
 
 # Instalar dependencias
@@ -49,3 +55,21 @@ npm start
 
 # Build para producción
 npm run build
+
+
+## 📦 Enlaces de Entrega
+
+### 🌐 Aplicación Web
+**URL:** https://mitiendama.netlify.app
+
+### 📱 Aplicación Móvil (APK)
+**Descargar:** https://github.com/MatheoAedo/mitiendama-react/releases/download/v1.0.0/mitiendama-release.apk
+
+### 💻 Código Fuente
+**Repositorio:** https://github.com/MatheoAedo/mitiendama-react
+
+### 📋 Instrucciones de Instalación
+1. **Descargar** el APK desde el enlace anterior
+2. **Habilitar** "Orígenes desconocidos" en Android
+3. **Instalar** el archivo .apk
+4. **Ejecutar** la aplicación
