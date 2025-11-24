@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import {  Row, Col, Alert, Spinner } from 'react-bootstrap';
+import React, { useState, useEffect, useMemo } from 'react';
+import { Row, Col, Alert, Spinner } from 'react-bootstrap';
 import { db } from '../services/firebaseConfig';
 import { collection, getDocs } from 'firebase/firestore';
 import ProductItem from './ProductItem';
@@ -17,8 +17,8 @@ function ProductList({ addToCart }) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
-  // Datos de ejemplo
-  const sampleProducts = [
+  // Mueve sampleProducts a useMemo para estabilizar la referencia
+  const sampleProducts = useMemo(() => [
     {
       id: 1,
       name: "Laptop Gamer Pro",
@@ -61,7 +61,7 @@ function ProductList({ addToCart }) {
       price: 599990,
       image: "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&h=300&fit=crop"
     }
-  ];
+  ], []); // El array vacío asegura que solo se cree una vez
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -94,7 +94,7 @@ function ProductList({ addToCart }) {
     setTimeout(() => {
       fetchProducts();
     }, 1000);
-  }, []);
+  }, [sampleProducts]); // ✅ Agregar sampleProducts como dependencia
 
   if (loading) {
     return (
